@@ -1,5 +1,5 @@
 {
-    "name": "wadeshuler/yii2-sendgrid",
+    "name": "ljurgs/yii2-sendgrid",
     "description": "Yii2 Mailer extension for SendGrid with batch mailing support. This extension is designed to replace them all! The only Yii2 SendGrid extension you will need!",
     "keywords": ["yii2", "sendgrid", "yii2 mailer", "yii2 sendgrid", "yii2 sendgrid mailer"],
     "homepage": "https://github.com/wadeshuler/yii2-sendgrid-mailer",
@@ -19,7 +19,7 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.11",
-        "sendgrid/sendgrid": "~5.4"
+        "sendgrid/sendgrid": "~7"
     },
     "autoload": {
         "psr-4": {

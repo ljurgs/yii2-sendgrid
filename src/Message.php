@@ -1,5 +1,5 @@
 <?php
-namespace wadeshuler\sendgrid;
+namespace ljurgs\sendgrid;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -588,7 +588,7 @@ class Message extends BaseMessage
             // SendGrid-PHP library only supports string email
             // however v3 Web API supports name & email
             // @issue https://github.com/sendgrid/sendgrid-php/issues/390
-            if ( is_string($this->replyTo) ) {
+            if ( isset($this->replyTo) && is_string($this->replyTo) ) {
                 $this->getSendGridMail()->setReplyTo( new \SendGrid\ReplyTo($this->replyTo) );
             } else {
                 Yii::warning('ReplyTo must be a string and was ignored!');

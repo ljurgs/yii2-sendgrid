@@ -1,5 +1,5 @@
 <?php
-namespace wadeshuler\sendgrid;
+namespace ljurgs\sendgrid;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -13,7 +13,7 @@ class Mailer extends BaseMailer
     /**
      * @var string the default class name of the new message instances created by [[createMessage()]]
      */
-    public $messageClass = 'wadeshuler\sendgrid\Message';
+    public $messageClass = 'ljurgs\sendgrid\Message';
 
     /**
      * @var string the directory where the email messages are saved when [[useFileTransport]] is true.
