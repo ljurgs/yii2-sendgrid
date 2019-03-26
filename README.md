@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wadeshuler/yii2-sendgrid
+php composer.phar require --prefer-dist ljurgs/yii2-sendgrid
 ```
 
 or add
 
 ```json
-"wadeshuler/yii2-sendgrid": "~1.0"
+"ljurgs/yii2-sendgrid": "~1.0"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -24,7 +24,7 @@ to the require section of your application's `composer.json` file.
 Then configure your `mailer` component in your `main-local.php` (advanced) or `web.php` (basic) like so:
 
     'mailer' => [
-        'class' => 'wadeshuler\sendgrid\Mailer',
+        'class' => 'ljurgs\sendgrid\Mailer',
         'viewPath' => '@common/mail',
         // send all mails to a file by default. You have to set
         // 'useFileTransport' to false and configure a transport
