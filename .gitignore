@@ -1,0 +1,30 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+#######################
+
+.idea
+nbproject
+.buildpath
+.project
+.settings
+auth.json
+.sass-cache
+/build
+/c3.php
+*.log
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# composer vendor dir
+/vendor
